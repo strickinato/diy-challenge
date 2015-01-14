@@ -4,6 +4,10 @@ body {
   font-family: sans-serif;
 }
 
+#wrapper {
+  margin-left: 30px;
+}
+
 img {
   float: left;
 }
@@ -16,7 +20,7 @@ h3:hover {
   color: white;
 }
 
-}
+#
 /* Overlays */
 .ui-widget-overlay {
   position: fixed;

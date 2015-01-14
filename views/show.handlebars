@@ -1,19 +1,20 @@
-<div class="skill-header">
-  <h1 style='color: {{skill.color}}'>{{skill.title}}</h1>
-  <img src='{{skill.images.small}}'>
-</div>
-<div id="info">
-  <p>Click any challenge to learn more:</p>
-</div>
-<div id="challenges-list">
-  {{#each challenges}}
-    <h3 style='color: {{../skill.color}}'>{{ title }}</h3>
-    <p>{{ description }}</p>
+<div id="wrapper">
+  <div class="skill-header">
+    <h1 style='color: {{skill.color}}'>{{skill.title}}</h1>
+    <img src='{{skill.images.small}}'>
+  </div>
+  <div id="info">
+    <p>Click any challenge to learn more:</p>
+  </div>
+  <div id="challenges-list">
+    {{#each challenges}}
+      <h3 style='color: {{../skill.color}}'>{{ title }}</h3>
+      <p>{{ description }}</p>
 
-  {{/each}}
+    {{/each}}
+  </div>
+  <a href="/">Back to all skills</a>
 </div>
-<a href="/">Back to all skills</a>
-
 <link rel="stylesheet" type="text/css" href="../../show-styles.css">
 
 

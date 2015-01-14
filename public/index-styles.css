@@ -3,10 +3,9 @@ body {
 }
 
 .skill {
-  margin: 0 auto;
   width: 600px;
-  text-align: center;
   font-family: sans-serif;
+  margin-left: 30px;
 }
 
 .skill h1 {
