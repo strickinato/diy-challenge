@@ -5,14 +5,27 @@ router = express.Router();
 
 
 router.get('/:skillname', function(req, res) {
-  var skill = req.params.skillname
-  var request = diy({
+  var skillURL = req.params.skillname
+  var skillRequest = diy({
     method: 'GET',
-    uri:    '/skills/'+ skill + '/challenges'
+    uri:    '/skills/' + skillURL
   }, function(err, body){
-    res.render('show', { skills: body.response });
-  });
+    if (err) return function(err) {
+      res.send(404)
+    }
 
+    var skill = body.response;
+    var challengesRequest = diy({
+      method: 'GET',
+      uri:    '/skills/' + skillURL + '/challenges'
+    }, function(err, body) {
+      var challenges = body.response;
+      res.render('show', {
+        skill: skill,
+        challenges: body.response
+      });
+    });
+  });
 });
 
 

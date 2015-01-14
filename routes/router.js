@@ -7,7 +7,7 @@ var express = require('express'),
 router.get('/', function(req, res) {
   var request = diy({
     method: 'GET',
-    uri:    '/skills?limit=0',
+    uri:    '/skills?limit=0', //known small amount, not worried about huge query
   }, function(err, body){
     console.log(body.response)
     res.render('index', { skills: body.response });
