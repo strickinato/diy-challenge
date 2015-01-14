@@ -3,9 +3,11 @@
     <h1 style='color: {{skill.color}}'>{{skill.title}}</h1>
     <img src='{{skill.images.small}}'>
   </div>
+
   <div id="info">
     <p>Click any challenge to learn more:</p>
   </div>
+
   <div id="challenges-list">
     {{#each challenges}}
       <h3 style='color: {{../skill.color}}'>{{ title }}</h3>
@@ -13,10 +15,11 @@
 
     {{/each}}
   </div>
+
   <a href="/">Back to all skills</a>
 </div>
-<link rel="stylesheet" type="text/css" href="../../show-styles.css">
 
+<link rel="stylesheet" type="text/css" href="../../show-styles.css">
 
 <script type="text/javascript">
   $('#challenges-list').accordion({ active: false, collapsible: true });

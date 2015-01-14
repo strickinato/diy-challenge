@@ -1,7 +1,7 @@
 {
-  "name": "grid",
-  "version": "0.0.0",
-  "description": "",
+  "name": "DIY Challenge",
+  "version": "0.0.1",
+  "description": "A multi-route proof of skill for DIY.org to show Aaron Strick is a great developer!",
   "main": "app.js",
   "dependencies": {
     "browserify-middleware": "^4.1.0",
@@ -13,6 +13,6 @@
   "scripts": {
     "start": "nodemon app.js"
   },
-  "author": "",
+  "author": "Aaron Strick",
   "license": "ISC"
 }
