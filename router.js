@@ -9,6 +9,7 @@ router.get('/', function(req, res) {
     method: 'GET',
     uri:    '/skills'
   }, function(err, body){
+    console.log(body.response)
     res.render('index', { url: body.response });
   });
 
