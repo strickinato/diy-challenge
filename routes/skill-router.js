@@ -20,6 +20,7 @@ router.get('/:skillname', function(req, res) {
       uri:    '/skills/' + skillURL + '/challenges'
     }, function(err, body) {
       var challenges = body.response;
+      console.log(challenges)
       res.render('show', {
         skill: skill,
         challenges: body.response
