@@ -1,9 +1,9 @@
 <div id='all-skills'>
   {{#each skills}}
-  <div class='skill'>
+  <div class='skill' style='color: {{color}}'>
     <h1 class='skill-title'>{{title}}</h1>
     <p class='skill-description'>{{description}}</p>
-    <a href=''><img src='{{images.large}}'></a>
+    <a href='/{{url}}/'><img src='{{images.large}}'></a>
   </div>
   {{/each}}
 </div>

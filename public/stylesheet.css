@@ -6,13 +6,12 @@ body {
   margin: 0 auto;
   width: 600px;
   text-align: center;
-  font-family: monospace;
+  font-family: sans-serif;
 }
 
 .skill h1 {
-  color: white;
 }
 
 .skill p {
-  color: white;
+
 }
