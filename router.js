@@ -7,10 +7,9 @@ router.get('/', function(req, res) {
   var skillName = req.path
   var request = diy({
     method: 'GET',
-    uri:    '/skills'
+    uri:    '/skills?limit=0',
   }, function(err, body){
-    console.log(body.response)
-    res.render('index', { url: body.response });
+    res.render('index', { skills: body.response });
   });
 
 });
