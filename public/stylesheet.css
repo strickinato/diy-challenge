@@ -1,0 +1,18 @@
+body {
+  background-color: black;
+}
+
+.skill {
+  margin: 0 auto;
+  width: 600px;
+  text-align: center;
+  font-family: monospace;
+}
+
+.skill h1 {
+  color: white;
+}
+
+.skill p {
+  color: white;
+}

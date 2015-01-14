@@ -6,7 +6,6 @@
   "dependencies": {
     "browserify-middleware": "^4.1.0",
     "diy": "^1.1.0",
-    "ejs": "^2.1.4",
     "express": "^4.10.8",
     "express-handlebars": "^1.1.0"
   },
