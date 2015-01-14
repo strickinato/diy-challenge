@@ -3,8 +3,8 @@ var express = require('express'),
     router = express.Router();
 
 
+
 router.get('/', function(req, res) {
-  var skillName = req.path
   var request = diy({
     method: 'GET',
     uri:    '/skills?limit=0',
@@ -14,5 +14,7 @@ router.get('/', function(req, res) {
   });
 
 });
+
+
 
 module.exports = router;
